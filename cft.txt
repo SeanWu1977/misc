@@ -1,0 +1,80 @@
+https://overthewire.org/wargames/bandit/bandit0.html
+
+
+Level 0
+Level 0 → Level 1 bandit0/bandit0 
+cat readme
+Level 1 → Level 2 bandit1/boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+cat ./-
+Level 2 → Level 3 bandit2/CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+cat "spaces in this filename"
+Level 3 → Level 4 bandit3/UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+cat ~/inhere/.hidden
+Level 4 → Level 5 bandit4/pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+file ~/inhere/* | grep 
+# grep text *.conf         從所有檔案延伸名為 .conf 的檔案中尋找字串 text
+# grep ^text *.conf       尋找以字串 text 為行首的資料列
+# grep text$ *.conf       尋找以字串 text 為行尾的資料列
+
+cat /home/bandit4/inhere/-file07
+Level 5 → Level 6 bandit5/koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+find . -type f -size 1033c ! -executable 
+find ./ -name "SUM*"
+Level 6 → Level 7 bandit6/DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+find / -group bandit6 -user bandit7 -size 33c 
+
+Level 7 → Level 8 bandit7/HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+cat data.txt | grep millionth
+
+https://blog.gtwang.org/linux/linux-uniq-command-tutorial/
+uniq example1.txt    刪除重複文字行 (比較前/後行)
+uniq -c example1.txt 刪除重複文字行之後，標示出每一行的重複次數(比較前/後行)
+uniq -D example1.txt 輸出有重複的文字行，重複的行都會印出(比較前/後行)
+uniq -d example1.txt 輸出有重複的文字行，重複的行只印一次(比較前/後行)
+uniq -u example1.txt 輸出沒有重複的文字行(比較前/後行)
+
+https://blog.gtwang.org/linux/linux-sort-command-tutorial-and-examples/
+sort <file>  依行排序
+sort -t, -k2,2 linux.txt 用-t指定分隔號，-k為指派那一欄，從第2欄，到第2欄，同-k2
+ls -l | sort -k6M,6 -k7n,7 第六欄用月份，第七欄用數字，沒有n
+
+Level 8 → Level 9 bandit8/cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+sort data.txt | uniq -u
+
+Level 9 → Level 10 bandit9/UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+strings data.txt | grep ===
+
+
+Level 10 → Level 11 bandit10/truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+Level 11 → Level 12 bandit
+Level 12 → Level 13 bandit
+Level 13 → Level 14 bandit
+Level 14 → Level 15 bandit
+Level 15 → Level 16 bandit
+Level 16 → Level 17 bandit
+Level 17 → Level 18 bandit
+Level 18 → Level 19 bandit
+Level 19 → Level 20 bandit
+Level 20 → Level 21 bandit
+Level 21 → Level 22 bandit
+Level 22 → Level 23 bandit
+Level 23 → Level 24 bandit
+Level 24 → Level 25 bandit
+Level 25 → Level 26 bandit
+Level 26 → Level 27 bandit
+Level 27 → Level 28 bandit
+Level 28 → Level 29 bandit
+Level 29 → Level 30 bandit
+Level 30 → Level 31 bandit
+Level 31 → Level 32 bandit
+Level 32 → Level 33 bandit
+Level 33 → Level 34 bandit
+
+
+cat ./-file
+file ./* =>check file type
+
+
+ 
+ 
+cut -d ':' -f 1 /etc/passwd | head -n 3 | xargs -p -n 1 id
